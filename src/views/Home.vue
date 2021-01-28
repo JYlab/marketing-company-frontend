@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="@/assets/VictoryMarketing_full.png">
-    <HelloWorld msg="Developing now..."/>
+    <v-app id="inspire">
+    <Menu></Menu>
+    <SlideContents></SlideContents>
+    </v-app>
+
   </div>
 </template>
 
 <script>
 
-import HelloWorld from '@/components/HelloWorld.vue'
+import Menu from '@/components/Menu.vue'
+import SlideContents from '@/components/SlideContents.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Menu,
+    SlideContents,
   }
 }
 </script>
